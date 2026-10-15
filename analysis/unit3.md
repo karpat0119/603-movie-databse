@@ -1,0 +1,3 @@
+when the dashboard team created those queries the team memeber said that half the events failed, and as a result leadership had to freeze the quartely payout. In the filter we were checking for movies that were made from 2015 onwards and are active. We see 76 titles, and it is missing 25 percent of the rest of the records that should be there. 
+
+The error was that we were not including the records where the withdrawn reason was left blank. The query that was written by the team did not think of the values that were left blank. Leadership should lift the freeze on the payments since that failure on half of the results were not accurate. Once the filter in the dashboard includes the blank values then the correct numbers will appear.
