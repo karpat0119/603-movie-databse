@@ -11,3 +11,12 @@ The other questions that users will want to know is what movies should I watch. 
 ## Schema
 
 We have tblUsers, tblMovies, tblGenres, tblRatings and tblMovieGenres in this database. tblUsers, tblMovies, and tblGenres each have their own primary key ints. As for tblRatings and tblMoviegenres we are using foreign keys in this table that act as our primary keys. Now for tblRatings when deleting a userId (FK) we have it on cascade so it will also delete from this table as I did not want orphan records. And in the same table movieId we are using cascade as well because we would want to delete the ratings for that movie if it no longer will exist in our database. Now for tblMovieGenres we have a delete cascade on our movieId because if a movie is delete we do not need the genre of the movie recorded in that table. For genreId I decided to do a restrict on the delete because if a genere is deleted it would cause all the other movies associated to that genre to be deleted if it was cascaded.
+
+Query	    Business question
+q4_1.sql    #1	What is the count, total average, lowest and highest score?
+q4_1.sql    #2	What is average score and rating per movie?
+q4_1.sql    #3	Show me average score and rating per movie that has more than 10 events.
+q4_1.sql    #4	How does each movie do per country?
+q4_2.sql    Part a	Per movie, what is the rating count and how many were spam withdrawals?
+q4_2.sql    Part b	Ratings per country and grand total?
+q4_2.sql    Part c	What is the average spam withdrawl rate where events are greater than 10?
